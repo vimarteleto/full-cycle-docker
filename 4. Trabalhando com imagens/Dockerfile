@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM nginx:latest
 
 # criar e definir a pasta padrão no container
 WORKDIR /app
