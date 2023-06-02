@@ -6,7 +6,7 @@ WORKDIR /app
 RUN apt-get update && \
     apt-get install vim -y
 
-# copia o conteudo da pasta html local para o caminho dentro do container
+# copia o conteudo da pasta html local para o WORKDIR
 COPY html /usr/share/nginx/html
 
 # copia o script entrypoint.sh
